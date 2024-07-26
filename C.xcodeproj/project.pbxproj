@@ -14,6 +14,10 @@
 		2B691F112C53FDF400E9E584 /* CTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B691F102C53FDF400E9E584 /* CTests.swift */; };
 		2B691F1B2C53FDF400E9E584 /* CUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B691F1A2C53FDF400E9E584 /* CUITests.swift */; };
 		2B691F1D2C53FDF400E9E584 /* CUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B691F1C2C53FDF400E9E584 /* CUITestsLaunchTests.swift */; };
+		2B691F2A2C53FE3000E9E584 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B691F292C53FE3000E9E584 /* ContactViewModel.swift */; };
+		2BEE4CC02C54144000AF3E3C /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE4CBF2C54144000AF3E3C /* ContactDetailView.swift */; };
+		2BEE4CC22C54145100AF3E3C /* ContactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE4CC12C54145100AF3E3C /* ContactDetailViewModel.swift */; };
+		2BEE4CC42C541E9200AF3E3C /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE4CC32C541E9200AF3E3C /* ContactModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		2B691F162C53FDF400E9E584 /* CUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B691F1A2C53FDF400E9E584 /* CUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUITests.swift; sourceTree = "<group>"; };
 		2B691F1C2C53FDF400E9E584 /* CUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2B691F292C53FE3000E9E584 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		2BEE4CBF2C54144000AF3E3C /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		2BEE4CC12C54145100AF3E3C /* ContactDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewModel.swift; sourceTree = "<group>"; };
+		2BEE4CC32C541E9200AF3E3C /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +104,12 @@
 			children = (
 				2B691EFF2C53FDEC00E9E584 /* CApp.swift */,
 				2B691F012C53FDEC00E9E584 /* ContentView.swift */,
+				2BEE4CBF2C54144000AF3E3C /* ContactDetailView.swift */,
+				2BEE4CC12C54145100AF3E3C /* ContactDetailViewModel.swift */,
 				2B691F032C53FDF300E9E584 /* Assets.xcassets */,
 				2B691F052C53FDF300E9E584 /* Preview Content */,
+				2B691F292C53FE3000E9E584 /* ContactViewModel.swift */,
+				2BEE4CC32C541E9200AF3E3C /* ContactModel.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -257,7 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BEE4CC02C54144000AF3E3C /* ContactDetailView.swift in Sources */,
 				2B691F022C53FDEC00E9E584 /* ContentView.swift in Sources */,
+				2BEE4CC42C541E9200AF3E3C /* ContactModel.swift in Sources */,
+				2B691F2A2C53FE3000E9E584 /* ContactViewModel.swift in Sources */,
+				2BEE4CC22C54145100AF3E3C /* ContactDetailViewModel.swift in Sources */,
 				2B691F002C53FDEC00E9E584 /* CApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

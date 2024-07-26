@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct CApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      ContentView(model: ContactViewModel())
     }
+  }
 }

@@ -1,26 +1,23 @@
-//
-//  ContentView.swift
-//  C
-//
-//  Created by Emre Cekic on 26.07.2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+  @State var model: ContactViewModel
+  var body: some View {
+    NavigationView {
+      List {
+        ForEach(model.contacts) { contact in
+          NavigationLink {
+            ContactDetailView(contact: contact, model: model)
+          } label: {
+            HStack {
+              Text(contact.firstName)
+              Spacer()
+              Button(role: nil, action: { model.deleteContact(id: contact.id) }, label: { Label("", systemImage: "trash") }).buttonStyle(.borderless)
+            }
+          }
+          .isDetailLink(false)
         }
-        .padding()
+      }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+  }
 }
