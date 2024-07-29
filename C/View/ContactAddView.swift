@@ -12,7 +12,7 @@ struct ContactAddView: View {
   @Environment(\.dismiss) var dismiss
   
   @Binding var model: ContactViewModel
-  @State var name: String = ""
+  @State private var name: String = ""
   
   var body: some View {
     List {

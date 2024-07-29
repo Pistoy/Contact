@@ -11,7 +11,7 @@ import SwiftUI
 struct CApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView(model: ContactViewModel())
+      ContentView(model: .init())
     }
   }
 }
