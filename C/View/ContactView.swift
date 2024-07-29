@@ -13,23 +13,21 @@ struct ContactView: View {
   
   var body: some View {
     NavigationStack {
-      List {
-        ForEach(0..<model.contacts.count, id: \.self) { index in
-          NavigationLink {
-            ContactDetailView(model: $model, index: index)
-          } label: {
-            HStack {
-              Text(model.contacts[index].firstName)
-              Spacer()
-              Button(action: {
-                model.index = index
-                model.alertShowing = true
-              }) {
-                Image(systemName: "trash")
-                  .foregroundColor(.red)
-              }
-              .buttonStyle(.borderless)
+      List(model.contacts) { contact in
+        NavigationLink {
+          ContactDetailView(model: $model, contact: contact)
+        } label: {
+          HStack {
+            Text(contact.firstName)
+            Spacer()
+            Button(action: {
+              model.id = contact.id
+              model.alertShowing = true
+            }) {
+              Image(systemName: "trash")
+                .foregroundColor(.red)
             }
+            .buttonStyle(.borderless)
           }
         }
       }

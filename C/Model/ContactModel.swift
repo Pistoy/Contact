@@ -1,7 +1,8 @@
 import Foundation
 
-struct ContactModel {
+struct ContactModel: Identifiable {
   
+  var id = UUID()
   var firstName: String
   
 }

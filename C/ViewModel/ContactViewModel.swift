@@ -2,13 +2,15 @@ import Foundation
 
 struct ContactViewModel {
   var alertShowing = false
-  var index: Int?
+  var id: UUID?
   var contacts = [ContactModel(firstName: "X"),
                   ContactModel(firstName: "N"),
                   ContactModel(firstName: "D")]
   
   mutating func deleteContact() {
-    contacts.remove(at: index!)
+    contacts.removeAll { contact in
+      contact.id == self.id
+    }
   }
   
   mutating func addContact(_ string: String) {
