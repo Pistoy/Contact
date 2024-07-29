@@ -16,8 +16,10 @@
 		2B691F1D2C53FDF400E9E584 /* CUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B691F1C2C53FDF400E9E584 /* CUITestsLaunchTests.swift */; };
 		2B691F2A2C53FE3000E9E584 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B691F292C53FE3000E9E584 /* ContactViewModel.swift */; };
 		2BEE4CC02C54144000AF3E3C /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE4CBF2C54144000AF3E3C /* ContactDetailView.swift */; };
-		2BEE4CC22C54145100AF3E3C /* ContactDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE4CC12C54145100AF3E3C /* ContactDetailViewModel.swift */; };
 		2BEE4CC42C541E9200AF3E3C /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE4CC32C541E9200AF3E3C /* ContactModel.swift */; };
+		2BEE4CC92C55087300AF3E3C /* ContactAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE4CC82C55087200AF3E3C /* ContactAddView.swift */; };
+		2BEE4CCD2C550B4B00AF3E3C /* TextLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE4CCC2C550B4B00AF3E3C /* TextLabels.swift */; };
+		2BEE4CCF2C550DA600AF3E3C /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEE4CCE2C550DA500AF3E3C /* ContactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +52,10 @@
 		2B691F1C2C53FDF400E9E584 /* CUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2B691F292C53FE3000E9E584 /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		2BEE4CBF2C54144000AF3E3C /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
-		2BEE4CC12C54145100AF3E3C /* ContactDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailViewModel.swift; sourceTree = "<group>"; };
 		2BEE4CC32C541E9200AF3E3C /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		2BEE4CC82C55087200AF3E3C /* ContactAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAddView.swift; sourceTree = "<group>"; };
+		2BEE4CCC2C550B4B00AF3E3C /* TextLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLabels.swift; sourceTree = "<group>"; };
+		2BEE4CCE2C550DA500AF3E3C /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				2B691EFF2C53FDEC00E9E584 /* CApp.swift */,
-				2B691F012C53FDEC00E9E584 /* ContentView.swift */,
-				2BEE4CBF2C54144000AF3E3C /* ContactDetailView.swift */,
-				2BEE4CC12C54145100AF3E3C /* ContactDetailViewModel.swift */,
+				2BEE4CC72C542F3F00AF3E3C /* Model */,
+				2BEE4CC62C542F3900AF3E3C /* View */,
+				2BEE4CC52C542F2700AF3E3C /* ViewModel */,
 				2B691F032C53FDF300E9E584 /* Assets.xcassets */,
 				2B691F052C53FDF300E9E584 /* Preview Content */,
-				2B691F292C53FE3000E9E584 /* ContactViewModel.swift */,
-				2BEE4CC32C541E9200AF3E3C /* ContactModel.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -137,6 +139,42 @@
 				2B691F1C2C53FDF400E9E584 /* CUITestsLaunchTests.swift */,
 			);
 			path = CUITests;
+			sourceTree = "<group>";
+		};
+		2BEE4CC52C542F2700AF3E3C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2B691F292C53FE3000E9E584 /* ContactViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2BEE4CC62C542F3900AF3E3C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B691F012C53FDEC00E9E584 /* ContentView.swift */,
+				2BEE4CC82C55087200AF3E3C /* ContactAddView.swift */,
+				2BEE4CBF2C54144000AF3E3C /* ContactDetailView.swift */,
+				2BEE4CCE2C550DA500AF3E3C /* ContactView.swift */,
+				2BEE4CD02C550F8C00AF3E3C /* Labels */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BEE4CC72C542F3F00AF3E3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BEE4CC32C541E9200AF3E3C /* ContactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BEE4CD02C550F8C00AF3E3C /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				2BEE4CCC2C550B4B00AF3E3C /* TextLabels.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +310,10 @@
 				2BEE4CC02C54144000AF3E3C /* ContactDetailView.swift in Sources */,
 				2B691F022C53FDEC00E9E584 /* ContentView.swift in Sources */,
 				2BEE4CC42C541E9200AF3E3C /* ContactModel.swift in Sources */,
+				2BEE4CCF2C550DA600AF3E3C /* ContactView.swift in Sources */,
+				2BEE4CCD2C550B4B00AF3E3C /* TextLabels.swift in Sources */,
 				2B691F2A2C53FE3000E9E584 /* ContactViewModel.swift in Sources */,
-				2BEE4CC22C54145100AF3E3C /* ContactDetailViewModel.swift in Sources */,
+				2BEE4CC92C55087300AF3E3C /* ContactAddView.swift in Sources */,
 				2B691F002C53FDEC00E9E584 /* CApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
